@@ -4,7 +4,7 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: Egg Sales Tracker 1
+      app_store_connect: Egg Sales Tracker
     environment:
       groups:
         - code-signing
@@ -25,7 +25,7 @@ workflows:
       - name: Set up signing certificate
         script: keychain add-certificates
       - name: Set up code signing settings on Xcode project
-        script: xcode-project use-profiles --project ios/*.xcodeproj
+        script: xcode-project use-profiles --project ios/EggSalesTracker.xcodeproj
       - name: Set the build version
         script: |
             #!/bin/sh

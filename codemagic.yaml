@@ -4,7 +4,7 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: Egg Sales Tracker
+      app_store_connect: Egg Sales Tracker 1
     environment:
       groups:
         - code-signing

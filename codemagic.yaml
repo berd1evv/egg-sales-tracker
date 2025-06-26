@@ -25,7 +25,7 @@ workflows:
       - name: Set up signing certificate
         script: keychain add-certificates
       - name: Set up code signing settings on Xcode project
-        script: xcode-project use-profiles --project ios/EggSalesTracker.xcodeproj
+        script: xcode-project use-profiles
       - name: Set the build version
         script: |
             #!/bin/sh
